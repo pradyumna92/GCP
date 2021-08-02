@@ -11,20 +11,18 @@ public class ChromeDemo {
 
     private WebDriver driver;
 
-//     @BeforeClass
-//     public void initDriver() {
-//         System.out.println("You are testing in firefox");
-//         System.setProperty("webdriver.chrome.driver", "chromedriver");
-//         driver = new ChromeDriver();
-//     }
+    @BeforeClass
+    public void initDriver() {
+        System.out.println("You are testing in firefox");
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
+        driver = new ChromeDriver();
+    }
 
     @Test
     public void searchTestNGInGoogle() {
-        System.out.println("You are testing in Chrome");
-        System.setProperty("webdriver.chrome.driver", "chromedriver");
-        driver = new ChromeDriver();
-//         final String searchKey = "TestNG";
-//         System.out.println("Search " + searchKey + " in google");
+    
+        final String searchKey = "TestNG";
+        System.out.println("Search " + searchKey + " in google");
         driver.navigate().to("https://www.google.com");
         WebElement element = driver.findElement(By.name("q"));
         System.out.println("Enter " + searchKey);
@@ -34,9 +32,9 @@ public class ChromeDemo {
         System.out.println("Got " + searchKey + " results");
     }
 
-//     @AfterClass
-//     public void quitDriver() {
-//         driver.quit();
-//     }
+    @AfterClass
+    public void quitDriver() {
+        driver.quit();
+    }
 }
 

@@ -10,7 +10,7 @@ public class FirefoxDemo {
 
     @BeforeClass
     public void initDriver() {
-        System.out.println("You are testing in Chrome");
+        System.out.println("You are testing in Firefox");
         System.setProperty("webdriver.gecko.driver", "geckodriver");
         driver = new FirefoxDriver();
     }

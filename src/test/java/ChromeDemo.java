@@ -24,12 +24,12 @@ public class ChromeDemo {
         final String searchKey = "TestNG";
         System.out.println("Search " + searchKey + " in google");
         driver.navigate().to("https://www.google.com");
-        WebElement element = driver.findElement(By.name("q"));
-        System.out.println("Enter " + searchKey);
-        element.sendKeys(searchKey);
+//         WebElement element = driver.findElement(By.name("q"));
+//         System.out.println("Enter " + searchKey);
+//         element.sendKeys(searchKey);
         System.out.println("submit");
-        element.submit();
-        System.out.println("Got " + searchKey + " results");
+//         element.submit();
+//         System.out.println("Got " + searchKey + " results");
     }
 
     @AfterClass

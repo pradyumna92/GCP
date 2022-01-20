@@ -16,6 +16,7 @@ public class ChromeDemo {
         System.out.println("You are testing in Chrome");
         System.setProperty("webdriver.chrome.driver", "chromedriver");
         driver = new ChromeDriver();
+        System.out.println("chrome is in use");
 
     }
 

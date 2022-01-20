@@ -13,6 +13,7 @@ public class FirefoxDemo {
         System.out.println("You are testing in Firefox");
         System.setProperty("webdriver.gecko.driver", "geckodriver");
         driver = new FirefoxDriver();
+        System.out.println("Firefox is in use");
     }
 
     @Test

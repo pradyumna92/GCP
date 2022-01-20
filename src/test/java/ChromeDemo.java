@@ -13,9 +13,10 @@ public class ChromeDemo {
 
     @BeforeClass
     public void initDriver() {
-        System.out.println("You are testing in firefox");
+        System.out.println("You are testing in Chrome");
         System.setProperty("webdriver.chrome.driver", "chromedriver");
         driver = new ChromeDriver();
+
     }
 
     @Test
